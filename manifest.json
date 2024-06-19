@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "lang2lang",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "js": ["src/app/content/main.tsx"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_title": "lang2lang",
+    "default_popup": "src/app/popup/index.html"
+  }
+}
